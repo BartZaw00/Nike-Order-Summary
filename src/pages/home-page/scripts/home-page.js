@@ -23,7 +23,7 @@ const animate = () => {
     clearInterval(loading);
     setTimeout(() => {
       window.location.reload();
-    }, 1000);
+    }, 2000);
   } else {
     per += 3;
     count += 1;
