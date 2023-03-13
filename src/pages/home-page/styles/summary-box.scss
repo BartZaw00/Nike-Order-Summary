@@ -7,6 +7,7 @@
   flex-direction: column;
   gap: 50px;
   min-width: 540px;
+  max-height: 100vw;
 
   & &__header {
     display: flex;
@@ -31,6 +32,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    overflow-y: scroll;
   }
 
   & &__buttons {
