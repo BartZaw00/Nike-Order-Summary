@@ -1,0 +1,16 @@
+.c-section {
+    max-width: 1440px;
+    padding: 143px 450px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+    .c-section {
+        padding: 228px 147px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .c-section {
+        padding:0;
+    }
+}

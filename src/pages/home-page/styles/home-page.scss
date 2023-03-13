@@ -1,0 +1,10 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+
+#home-page {
+background-color: var(--color-background);
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}

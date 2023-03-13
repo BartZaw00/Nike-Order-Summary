@@ -1,0 +1,28 @@
+.c-loader {
+    display: none;
+    text-align: center;
+    height: 54px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 5px;
+  
+    &--active {
+      display: flex;
+    }
+  
+    &__progress-bar {
+      width: 300px;
+      height: 21px;
+      background-color: #111;
+      border-radius: 13px;
+      margin: 0 auto;
+    }
+  
+    &__progress {
+      width: 200px;
+      height: 15px;
+      background-color: var(--color-secondary);
+      border-radius: 13px;
+    }
+  }
+  
