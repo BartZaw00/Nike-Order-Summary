@@ -8,15 +8,26 @@ import "../styles/summary-box.scss";
 import "../styles/summary-product.scss";
 import "../styles/summary-prices.scss";
 
-
 const btn = document.getElementById("confirm-button");
 const loader = document.getElementById("loader");
 const percent = document.getElementById("percent");
 const progress = document.getElementById("progress");
+const box = document.getElementById("box");
+const products = document.getElementById("products");
 
 let count = 4;
 let per = 8;
 let loading;
+
+const checkHeight = () => {
+  console.log(box.offsetHeight);
+  console.log(window.innerHeight);
+  if (box.offsetHeight >= window.innerHeight) {
+    products.classList.add("c-summary-box__products--scroll");
+  } else {
+    products.classList.remove("c-summary-box__products--scroll");
+  }
+};
 
 const animate = () => {
   if (count === 100) {
@@ -31,6 +42,8 @@ const animate = () => {
     percent.textContent = count + "%";
   }
 };
+
+window.addEventListener("load", checkHeight);
 
 btn.addEventListener("click", () => {
   btn.classList.add("c-summary-box__button--confirm-hide");
